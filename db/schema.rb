@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2022_01_10_193153) do
   create_table "reviews", force: :cascade do |t|
     t.string "title"
     t.string "description"
-    t.string "rate"
+    t.integer "rate"
     t.bigint "airline_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
